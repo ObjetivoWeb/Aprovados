@@ -12,6 +12,8 @@ WHERE
     nome = aprovado
 ORDER BY nome;
 
+-- Encontrar erros de digitação de aprovados conhecidos
+
 SELECT * FROM `test`.`alunos` WHERE nome LIKE '%GRECO%';
 
 SELECT * FROM test.aprovados where aprovado like '%YANKA GRECO GUIMARAES%';

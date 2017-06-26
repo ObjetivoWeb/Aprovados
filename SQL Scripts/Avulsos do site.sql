@@ -1,5 +1,6 @@
 
 -- Encontrar alunos que informaram na secretaria
+-- Os que não aparecem no resultado devem ser adicionados manualmente na tabela `aprovados`
 
 SELECT 
     *

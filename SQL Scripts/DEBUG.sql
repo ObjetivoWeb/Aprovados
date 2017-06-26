@@ -1,6 +1,10 @@
 
--- encontrar dados faltando
+-- Encontrar dados faltando
+-- Este script serve apenas para navegar mais rápido sem precisar carregar tudo
 
-SELECT * FROM aprovados where id > 36000 and id < 40000;
+SET @inicio = 3000;
+SET @limite = 4000;
+
+SELECT * FROM aprovados where id > @inicio and id < @limite;
 
 select * FROM aprovados;
