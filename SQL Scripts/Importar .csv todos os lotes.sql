@@ -11,6 +11,10 @@ delete FROM test.aprovados;
 
 -- C:\\Users\\Audiovisual\\Google Drive\\Objetivo\\Aprovados 2016\\Backup
 
+-- PARA FAZER:
+-- Criar tabela para o loop dos nomes de arquivos a serem importados
+-- Criar um procedure ou apenas um loop na tabela para importar planilhas
+
 LOAD DATA LOCAL INFILE CONCAT(@folder + 'Aprovados Unespar 2017.csv') INTO TABLE aprovados CHARACTER SET utf8 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n';
 
 delete from aprovados where pp like '%pub%priv%';
